@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<title>Intervolga test form</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=0" />
+		<meta name="format-detection" content="telephone=no" />
+	</head>
+	<body>
+		<div class="form">
+			<div class="form__close close-form"></div>
+			<h2 class="form__title h1">Транспортные средства и водители</h2>
+			<form class="form__form">
+				<div class="form__block">
+					<label class="form__field field">
+						<span class="field__title h3">Гос-номер</span>
+						<input
+							class="gosNum field__item input"
+							type="text"
+							name="gosNum"
+							placeholder="Укажите го-номер"
+							required
+							autocomplete="off" />
+					</label>
+					<label class="form__field field">
+						<span class="field__title h3"> Транспортное средство </span>
+						<input
+							class="field__item input"
+							type="text"
+							name="carModel"
+							placeholder="Транспортное средство"
+							required
+							autocomplete="off" />
+					</label>
+					<label class="form__field field">
+						<span class="field__title h3">
+							Ориентированная дата прибытия к покупателю
+						</span>
+						<input
+							class="date field__item input"
+							type="text"
+							name="saleDate"
+							placeholder="Дата*"
+							required
+							autocomplete="off" />
+					</label>
+				</div>
+				<div class="form__block">
+					<span class="form__block-title h2">Данные о водителе</span>
+					<label class="form__field field">
+						<span class="field__title h3">ФИО</span>
+						<input
+							class="field__item input"
+							type="text"
+							name="personFullName"
+							placeholder="Укажите ФИО водителя"
+							required
+							autocomplete="off" />
+					</label>
+					<label class="form__dubleField dubleField">
+						<span class="dubleField__title h3">Паспортные данные</span>
+						<div class="dubleField__fields">
+							<input
+								class="passportSeries dubleField__item input"
+								type="text"
+								name="passportSeries"
+								placeholder="Серия"
+								required
+								autocomplete="off" />
+							<input
+								class="passportNum dubleField__item input"
+								type="text"
+								name="passportNum"
+								placeholder="Номер"
+								required
+								autocomplete="off" />
+						</div>
+					</label>
+					<label class="form__field field">
+						<span class="field__title h3">Кем выдан</span>
+						<input
+							class="field__item input"
+							type="text"
+							name="issuedByWhom"
+							placeholder="Кем выдан"
+							required
+							autocomplete="off" />
+					</label>
+					<label class="form__field field">
+						<span class="field__title h3">Когда выдан</span>
+						<input
+							class="date field__item input"
+							type="text"
+							name="issuedDate"
+							placeholder="Когда выдан"
+							required
+							autocomplete="off" />
+					</label>
+				</div>
+				<div class="form__buttons">
+					<button
+						class="form__button btn-primary submit"
+						type="submit"
+						disabled>
+						Отправить
+					</button>
+					<button class="form__button btn-secondary reset" type="reset">
+						Отменить
+					</button>
+				</div>
+			</form>
+		</div>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
